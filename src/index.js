@@ -31,16 +31,49 @@ function restartGame() {
     isGameStarted = true
 }
 
-function playerClick(cell) {
+function checkMove(index, value) {
+    /*console.log(children[0].children[0].innerHTML)
+    console.log(children[1].children[0].innerHTML)
+    console.log(children[2].children[0].innerHTML)
+    console.log(children[index].children[0].innerHTML)*/
+    const children = board.children
+    //Check Row
+    if(index >= 0 && index <= 2) {
+        if(children[0].children[0].innerHTML === children[1].children[0].innerHTML && 
+            children[1].children[0].innerHTML === children[2].children[0].innerHTML && 
+            children[2].children[0].innerHTML === children[index].children[0].innerHTML) {
+                alert(`Ganó el jugador ${currentPlayer}`)
+                isGameStarted = false
+        }
+    }else if(index >= 3 && index <= 5) {
+        if(children[3].children[0].innerHTML === children[4].children[0].innerHTML && 
+            children[4].children[0].innerHTML === children[5].children[0].innerHTML && 
+            children[5].children[0].innerHTML === children[index].children[0].innerHTML) {
+                alert(`Ganó el jugador ${currentPlayer}`)
+                isGameStarted = false
+        }
+    }else {
+        if(children[6].children[0].innerHTML === children[7].children[0].innerHTML && 
+            children[7].children[0].innerHTML === children[8].children[0].innerHTML && 
+            children[8].children[0].innerHTML === children[index].children[0].innerHTML) {
+                alert(`Ganó el jugador ${currentPlayer}`)
+                isGameStarted = false
+        }
+    }
+}
+
+function playerClick(cell, index) {
     let value = cell.children[0].innerHTML
     if(isGameStarted && value === "") {
         movesPlayed++
         if(currentPlayer === 1) {
-            currentPlayer++ 
             cell.children[0].innerHTML = 'X'
+            checkMove(index, "X")
+            currentPlayer++ 
         }else {
-            currentPlayer--
             cell.children[0].innerHTML = 'O'
+            checkMove(index, "X")
+            currentPlayer--
         }
 
         if(movesPlayed === 9) {
@@ -51,9 +84,10 @@ function playerClick(cell) {
 }
 
 function setEventListeners(board) {
-    for(cell of board.children) {
+    for(let i = 0;i < board.children.length;i++) {
+        let cell = board.children[i]
         cell.addEventListener('click', function() {
-            playerClick(this)
+            playerClick(this, i)
         })
     }
     restartButton.addEventListener('click', function() {
