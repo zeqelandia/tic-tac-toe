@@ -32,10 +32,6 @@ function restartGame() {
 }
 
 function checkMove(index, value) {
-    /*console.log(children[0].children[0].innerHTML)
-    console.log(children[1].children[0].innerHTML)
-    console.log(children[2].children[0].innerHTML)
-    console.log(children[index].children[0].innerHTML)*/
     const children = board.children
     
     //Check Row
@@ -106,7 +102,7 @@ function playerClick(cell, index) {
             checkMove(index, "X")
         }
 
-        if(movesPlayed === 9) {
+        if(movesPlayed === 9 && isGameStarted) {
             alert("Empate")
             isGameStarted = false
         }
@@ -126,3 +122,41 @@ function setEventListeners(board) {
 }
 
 setEventListeners(board)
+
+function setCellStyles() {
+    const borderSize = 7
+    let borderStyle1 = `border-width: 0 ${borderSize}px ${borderSize}px 0`
+    let borderStyle2 = `border-width: 0 0 ${borderSize}px 0`
+    let borderStyle3 = `border-width: 0 ${borderSize}px 0 0`
+
+    for(let i = 0;i < board.children.length;i++) {
+        switch(i) {
+            case 0: 
+                board.children[i].style = borderStyle1
+                break
+            case 1: 
+                board.children[i].style = borderStyle1
+                break
+            case 2: 
+                board.children[i].style = borderStyle2
+                break
+            case 3: 
+                board.children[i].style = borderStyle1
+                break
+            case 4: 
+                board.children[i].style = borderStyle1
+                break
+            case 5: 
+                board.children[i].style = borderStyle2
+                break
+            case 6: 
+                board.children[i].style = borderStyle3
+                break
+            case 7: 
+                board.children[i].style = borderStyle3
+                break
+        }
+    }
+}
+
+setCellStyles()

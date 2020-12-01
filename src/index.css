@@ -1,5 +1,22 @@
 body {
+  background-image: url("https://wallpapercave.com/wp/wp3182801.png");
+  background-size: 100%;
   margin: 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__title {
+  color: #424242;
+  font-family: 'Dancing Script', cursive;
+  font-size: 6rem;
 }
 
 .main {
@@ -9,24 +26,27 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 .main__board {
   display: -ms-grid;
   display: grid;
-  height: 500px;
+  height: 30rem;
   -ms-grid-rows: (33%)[3];
   -ms-grid-columns: (33%)[3];
       grid-template: repeat(3, 33%)/repeat(3, 33%);
   min-height: 0;
   min-width: 0;
-  width: 500px;
+  width: 30rem;
 }
 
 .main__cell {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 0 solid #424242;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,16 +54,63 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  outline: 1px solid black;
   width: 100%;
 }
 
 .main__cell--text {
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
+  color: #424242;
+  font-family: 'Dancing Script', cursive;
   font-size: 7rem;
   font-weight: bold;
   margin: 0;
   padding: 0;
+}
+
+.main__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__button {
+  background-color: transparent;
+  border: none;
+  color: #424242;
+  cursor: pointer;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 4rem;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.footer__text {
+  position: fixed;
+  bottom: 0;
+}
+
+.footer__text--dev-name {
+  color: #424242;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.footer__text--link {
+  color: #424242;
+  font-weight: bold;
+  text-decoration: none;
 }
 /*# sourceMappingURL=index.css.map */

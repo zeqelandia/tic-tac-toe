@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="src/index.css">  
 </head>
 <body>
     <header class="header">
@@ -15,10 +15,15 @@
             <div id="board" class="main__board">
             </div>
             <div class="main__controls">
-                <button id="btnRestart">Restart Game</button>
+                <button class="main__button" id="btnRestart">Restart Game</button>
             </div>
         </div>
     </main>
-    <script defer src="index.js"></script>
+    <footer class="footer">
+        <div class="footer__text">
+            <p class="footer__text--dev-name">Made by <a href="https://github.com/zeqelandia" class="footer__text--link">@zeqelandia</a></p>
+        </div>
+    </footer>
+    <script defer src="src/index.js"></script>
 </body>
 </html>

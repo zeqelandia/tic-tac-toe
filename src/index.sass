@@ -1,30 +1,79 @@
+$main-color: rgb(66, 66, 66)
+    
 body 
+    background-image: url('https://wallpapercave.com/wp/wp3182801.png')
+    background-size: 100%
     margin: 0
+
+.header
+    display: flex
+    justify-content: center
+
+.header__title
+    color: $main-color
+    font-family: 'Dancing Script', cursive;
+    font-size: 6rem
 
 .main 
     display: flex
     justify-content: center
+    width: 100%
 
 .main__board
     display: grid
-    height: 500px
+    height: 30rem
     grid-template: repeat(3, 33%) / repeat(3, 33%)
     min-height: 0
     min-width: 0
-    width: 500px
+    width: 30rem
 
 .main__cell 
     align-items: center
+    border: 0 solid $main-color
+    cursor: pointer
     display: flex
     justify-content: center
     height: 100%
-    outline: 1px solid black
     width: 100%
 
 .main__cell--text
-    color: black
-    font-family: Arial, Helvetica, sans-serif
+    color: $main-color
+    font-family: 'Dancing Script', cursive;
     font-size: 7rem
     font-weight: bold
     margin: 0
     padding: 0
+
+.main__controls
+    display: flex
+    justify-content: center
+
+.main__button 
+    background-color: transparent
+    border: none
+    color: $main-color
+    cursor: pointer
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem
+    font-weight: bold
+    margin-top: 4rem
+
+.footer 
+    display: flex
+    justify-content: center
+    width: 100%
+
+.footer__text
+    position: fixed
+    bottom: 0
+
+.footer__text--dev-name 
+    color: $main-color
+    font-family: 'Dancing Script', cursive;
+    font-size: 1rem
+    font-weight: 500
+
+.footer__text--link
+    color: $main-color
+    font-weight: bold
+    text-decoration: none
