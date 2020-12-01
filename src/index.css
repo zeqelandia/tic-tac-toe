@@ -16,7 +16,7 @@ body {
 .header__title {
   color: #424242;
   font-family: 'Dancing Script', cursive;
-  font-size: 6rem;
+  font-size: 14vw;
 }
 
 .main {
@@ -32,13 +32,13 @@ body {
 .main__board {
   display: -ms-grid;
   display: grid;
-  height: 30rem;
+  height: 80vw;
   -ms-grid-rows: (33%)[3];
   -ms-grid-columns: (33%)[3];
       grid-template: repeat(3, 33%)/repeat(3, 33%);
   min-height: 0;
   min-width: 0;
-  width: 30rem;
+  width: 80vw;
 }
 
 .main__cell {
@@ -60,7 +60,7 @@ body {
 .main__cell--text {
   color: #424242;
   font-family: 'Dancing Script', cursive;
-  font-size: 7rem;
+  font-size: 25vw;
   font-weight: bold;
   margin: 0;
   padding: 0;
@@ -81,7 +81,7 @@ body {
   color: #424242;
   cursor: pointer;
   font-family: 'Dancing Script', cursive;
-  font-size: 2rem;
+  font-size: 7vw;
   font-weight: bold;
   margin-top: 4rem;
 }

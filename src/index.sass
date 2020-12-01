@@ -12,20 +12,22 @@ body
 .header__title
     color: $main-color
     font-family: 'Dancing Script', cursive;
-    font-size: 6rem
+    font-size: 14vw
 
 .main 
     display: flex
     justify-content: center
     width: 100%
 
+$cell-size: 80vw
+
 .main__board
     display: grid
-    height: 30rem
+    height: $cell-size
     grid-template: repeat(3, 33%) / repeat(3, 33%)
     min-height: 0
     min-width: 0
-    width: 30rem
+    width: $cell-size
 
 .main__cell 
     align-items: center
@@ -39,7 +41,7 @@ body
 .main__cell--text
     color: $main-color
     font-family: 'Dancing Script', cursive;
-    font-size: 7rem
+    font-size: 25vw
     font-weight: bold
     margin: 0
     padding: 0
@@ -54,7 +56,7 @@ body
     color: $main-color
     cursor: pointer
     font-family: 'Dancing Script', cursive;
-    font-size: 2rem
+    font-size: 7vw
     font-weight: bold
     margin-top: 4rem
 
