@@ -9,25 +9,25 @@ body
     display: flex
     justify-content: center
 
+$header__title-size: 9vh
 .header__title
     color: $main-color
-    font-family: 'Dancing Script', cursive;
-    font-size: 14vw
+    font-family: 'Comic Sans', cursive;
+    font-size: $header__title-size
 
 .main 
     display: flex
     justify-content: center
     width: 100%
 
-$cell-size: 80vw
-
+$main__board-size: 50vh
 .main__board
     display: grid
-    height: $cell-size
+    height: $main__board-size
     grid-template: repeat(3, 33%) / repeat(3, 33%)
     min-height: 0
     min-width: 0
-    width: $cell-size
+    width: $main__board-size
 
 .main__cell 
     align-items: center
@@ -38,10 +38,11 @@ $cell-size: 80vw
     height: 100%
     width: 100%
 
+$main__cell--text-size: 10vh
 .main__cell--text
     color: $main-color
-    font-family: 'Dancing Script', cursive;
-    font-size: 25vw
+    font-family: 'Comic Sans', cursive;
+    font-size: $main__cell--text-size
     font-weight: bold
     margin: 0
     padding: 0
@@ -50,15 +51,17 @@ $cell-size: 80vw
     display: flex
     justify-content: center
 
+$main__button-text-size: 3vh
+$main__button-text-margin: 5vh
 .main__button 
     background-color: transparent
     border: none
     color: $main-color
     cursor: pointer
-    font-family: 'Dancing Script', cursive;
-    font-size: 7vw
+    font-family: 'Comic Sans', cursive;
+    font-size: $main__button-text-size
     font-weight: bold
-    margin-top: 4rem
+    margin-top: $main__button-text-margin
 
 .footer 
     display: flex
@@ -69,13 +72,23 @@ $cell-size: 80vw
     position: fixed
     bottom: 0
 
+$footer__text--dev-name-text-size: 1.5vh
 .footer__text--dev-name 
     color: $main-color
-    font-family: 'Dancing Script', cursive;
-    font-size: 1rem
+    font-family: 'Comic Sans', cursive;
+    font-size: $footer__text--dev-name-text-size
     font-weight: 500
 
 .footer__text--link
     color: $main-color
     font-weight: bold
     text-decoration: none
+
+
+@media only screen and (max-width: 600px) 
+    .register__container 
+        background-color: transparent
+        border: none
+        padding: none
+        width: 100%
+

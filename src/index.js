@@ -82,7 +82,7 @@ function checkMove(index, value) {
     }
 
     if(!isGameStarted) {
-        alert(`Ganó el jugador ${currentPlayer}`)
+        swal({title: `Ganó el jugador ${currentPlayer}`, icon:"success"})
     }else if(currentPlayer === 1) {
         currentPlayer++
     } else if(currentPlayer === 2) {
@@ -103,7 +103,7 @@ function playerClick(cell, index) {
         }
 
         if(movesPlayed === 9 && isGameStarted) {
-            alert("Empate")
+            swal({title: "Empate", icon:"success"})
             isGameStarted = false
         }
     }
