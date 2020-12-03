@@ -15,8 +15,9 @@ body {
 
 .header__title {
   color: #424242;
-  font-family: 'Comic Sans', cursive;
+  font-family: "Architects Daughter", cursive;
   font-size: 9vh;
+  font-weight: 700;
 }
 
 .main {
@@ -59,7 +60,7 @@ body {
 
 .main__cell--text {
   color: #424242;
-  font-family: 'Comic Sans', cursive;
+  font-family: "Architects Daughter", cursive;
   font-size: 10vh;
   font-weight: bold;
   margin: 0;
@@ -80,8 +81,8 @@ body {
   border: none;
   color: #424242;
   cursor: pointer;
-  font-family: 'Comic Sans', cursive;
-  font-size: 3vh;
+  font-family: "Architects Daughter", cursive;
+  font-size: 5vh;
   font-weight: bold;
   margin-top: 5vh;
 }
@@ -103,8 +104,8 @@ body {
 
 .footer__text--dev-name {
   color: #424242;
-  font-family: 'Comic Sans', cursive;
-  font-size: 1.5vh;
+  font-family: "Architects Daughter", cursive;
+  font-size: 2.5vh;
   font-weight: 500;
 }
 

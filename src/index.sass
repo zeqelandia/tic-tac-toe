@@ -1,5 +1,6 @@
 $main-color: rgb(66, 66, 66)
-    
+$main-font: 'Architects Daughter', cursive;
+
 body 
     background-image: url('https://wallpapercave.com/wp/wp3182801.png')
     background-size: 100%
@@ -12,8 +13,9 @@ body
 $header__title-size: 9vh
 .header__title
     color: $main-color
-    font-family: 'Comic Sans', cursive;
+    font-family: $main-font
     font-size: $header__title-size
+    font-weight: 700
 
 .main 
     display: flex
@@ -41,7 +43,7 @@ $main__board-size: 50vh
 $main__cell--text-size: 10vh
 .main__cell--text
     color: $main-color
-    font-family: 'Comic Sans', cursive;
+    font-family: $main-font
     font-size: $main__cell--text-size
     font-weight: bold
     margin: 0
@@ -51,14 +53,14 @@ $main__cell--text-size: 10vh
     display: flex
     justify-content: center
 
-$main__button-text-size: 3vh
+$main__button-text-size: 5vh
 $main__button-text-margin: 5vh
 .main__button 
     background-color: transparent
     border: none
     color: $main-color
     cursor: pointer
-    font-family: 'Comic Sans', cursive;
+    font-family: $main-font
     font-size: $main__button-text-size
     font-weight: bold
     margin-top: $main__button-text-margin
@@ -72,10 +74,10 @@ $main__button-text-margin: 5vh
     position: fixed
     bottom: 0
 
-$footer__text--dev-name-text-size: 1.5vh
+$footer__text--dev-name-text-size: 2.5vh
 .footer__text--dev-name 
     color: $main-color
-    font-family: 'Comic Sans', cursive;
+    font-family: $main-font
     font-size: $footer__text--dev-name-text-size
     font-weight: 500
 
