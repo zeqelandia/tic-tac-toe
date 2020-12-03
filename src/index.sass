@@ -10,7 +10,7 @@ body
     display: flex
     justify-content: center
 
-$header__title-size: 9vh
+$header__title-size: 7vh
 .header__title
     color: $main-color
     font-family: $main-font
@@ -22,7 +22,7 @@ $header__title-size: 9vh
     justify-content: center
     width: 100%
 
-$main__board-size: 50vh
+$main__board-size: 42vh
 .main__board
     display: grid
     height: $main__board-size
@@ -40,7 +40,7 @@ $main__board-size: 50vh
     height: 100%
     width: 100%
 
-$main__cell--text-size: 10vh
+$main__cell--text-size: 9vh
 .main__cell--text
     color: $main-color
     font-family: $main-font
@@ -53,7 +53,7 @@ $main__cell--text-size: 10vh
     display: flex
     justify-content: center
 
-$main__button-text-size: 5vh
+$main__button-text-size: 4vh
 $main__button-text-margin: 5vh
 .main__button 
     background-color: transparent
@@ -87,10 +87,11 @@ $footer__text--dev-name-text-size: 2.5vh
     text-decoration: none
 
 
-@media only screen and (max-width: 600px) 
-    .register__container 
-        background-color: transparent
-        border: none
-        padding: none
-        width: 100%
+@media only screen and (max-width: 100px)
+    $header__title-size: 7vh
+    $main__board-size: 20vh 
+    $main__cell--text-size: 8vh
+    $main__button-text-size: 4vh
+    $main__button-text-margin: 3vh
+    $footer__text--dev-name-text-size: 2vh
 

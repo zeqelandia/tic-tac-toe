@@ -16,7 +16,7 @@ body {
 .header__title {
   color: #424242;
   font-family: "Architects Daughter", cursive;
-  font-size: 9vh;
+  font-size: 7vh;
   font-weight: 700;
 }
 
@@ -33,13 +33,13 @@ body {
 .main__board {
   display: -ms-grid;
   display: grid;
-  height: 50vh;
+  height: 42vh;
   -ms-grid-rows: (33%)[3];
   -ms-grid-columns: (33%)[3];
       grid-template: repeat(3, 33%)/repeat(3, 33%);
   min-height: 0;
   min-width: 0;
-  width: 50vh;
+  width: 42vh;
 }
 
 .main__cell {
@@ -61,7 +61,7 @@ body {
 .main__cell--text {
   color: #424242;
   font-family: "Architects Daughter", cursive;
-  font-size: 10vh;
+  font-size: 9vh;
   font-weight: bold;
   margin: 0;
   padding: 0;
@@ -82,7 +82,7 @@ body {
   color: #424242;
   cursor: pointer;
   font-family: "Architects Daughter", cursive;
-  font-size: 5vh;
+  font-size: 4vh;
   font-weight: bold;
   margin-top: 5vh;
 }
@@ -113,14 +113,5 @@ body {
   color: #424242;
   font-weight: bold;
   text-decoration: none;
-}
-
-@media only screen and (max-width: 600px) {
-  .register__container {
-    background-color: transparent;
-    border: none;
-    padding: none;
-    width: 100%;
-  }
 }
 /*# sourceMappingURL=index.css.map */
